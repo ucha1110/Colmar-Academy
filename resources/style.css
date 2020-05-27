@@ -182,3 +182,58 @@ nav p {
 .learning-container-3 p {
     margin-top: 8px;
 }
+
+/* Thesis exhibit */
+
+.thesis h1 {
+    padding-top: 32px;
+}
+
+.thesis-big {
+    display: flex;
+    padding: 32px 0 32px 24px;
+}
+
+.thesis-left {
+    width: 60%;
+}
+
+.thesis-left video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-left h2 {
+    margin-top: 24px;
+}
+
+.thesis-left p {
+    margin-top: 8px;
+}
+
+.thesis-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 24px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    border-top: 2px solid rgb(212, 212, 212);
+    padding: 16px 24px 40px 24px;
+}
+
+.rights {
+    flex-grow: 1;
+}
+
+.terms {
+    flex-grow: 0.05;
+}
+
+footer p {
+    font-size: 0.8em;
+}
