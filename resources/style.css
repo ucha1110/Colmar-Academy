@@ -117,6 +117,7 @@ nav p {
 .flex-container {
     display: flex;
     width: 100%;
+    border: 1px solid rgb(212, 212, 212);
 }
 
 .flex-container img {
@@ -143,6 +144,41 @@ nav p {
 /* Start Learning */
 
 .start-learning {
-    height: 700px;
     background-color: rgb(212, 212, 212);
+}
+
+.start-learning h1 {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.learning-container {
+    display: flex;
+    padding: 0 72px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.learning-container-2 {
+    width: 30%;
+    background-color: white;
+    margin: 32px 0;
+    padding-bottom: 24px;
+}
+
+.learning-container-2 img {
+    width: 100%;
+    height: auto;
+}
+
+.learning-container-3 {
+    padding-left: 16px;
+}
+
+.learning-container-3 h2 {
+    margin-top: 16px;
+}
+
+.learning-container-3 p {
+    margin-top: 8px;
 }
