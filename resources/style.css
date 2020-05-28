@@ -21,7 +21,7 @@ header {
     align-items: center;
 }
 
-#logo {
+.logo {
     height: 32px;
     margin-left: 24px;
     display: flex;
@@ -38,6 +38,23 @@ nav p {
     margin-left: 16px;
 }
 
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 /* Banner */
 
 .banner {
@@ -45,7 +62,6 @@ nav p {
    padding: 96px 0 32px 24px;
    display: flex;
    align-items: center;
-   flex-wrap: wrap;
 }
 
 .banner img {
@@ -74,6 +90,27 @@ nav p {
     align-items: center;
     justify-content: center;
     padding: 8px 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .banner {
+        flex-wrap: wrap;
+        padding: 64px 0 0 0;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .button-box {
+        padding: 32px 16px;
+    }
 }
 
 /* Info */
@@ -141,6 +178,37 @@ nav p {
     color: blue;
 }
 
+@media only screen and (max-width: 650px) {
+    
+    .info {
+        padding: 0;
+    }
+
+    .info-main {
+        display: none;
+    }
+
+    .info-menu {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-container-text {
+        width: 100%;
+        padding: 0 16px 16px 16px;
+    }
+}
+
 /* Start Learning */
 
 .start-learning {
@@ -183,10 +251,37 @@ nav p {
     margin-top: 8px;
 }
 
+.learning-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .learning-container {
+        display: none;
+    }
+
+    .start-learning {
+        background-color: white;
+        border-bottom: 1px solid rgb(212, 212, 212);
+    }
+
+    .learning-mobile {
+        display: block;
+        padding: 16px 0 32px 0;
+    }
+
+    .learning-mobile-2 {
+        background-color: rgb(212, 212, 212);
+        padding: 16px;
+        margin: 8px 16px;
+    }
+}
+
 /* Thesis exhibit */
 
 .thesis h1 {
     padding-top: 32px;
+    text-align: center;
 }
 
 .thesis-big {
@@ -218,6 +313,25 @@ nav p {
     padding-left: 24px;
 }
 
+@media only screen and (max-width: 650px) {
+    .thesis-big {
+        padding: 16px 0 24px 0;
+    }
+
+    .thesis-right {
+        display: none;
+    }
+
+    .thesis-left h2, 
+    .thesis-left p {
+        display: none;
+    }
+
+    .thesis-left {
+        width: 100%;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -236,4 +350,19 @@ footer {
 
 footer p {
     font-size: 0.8em;
+}
+
+@media only screen and (max-width: 650px) {
+    footer p {
+        display: none;
+    }
+
+    .rights {
+        display: block;
+        font-size: 0.7em;
+    }
+
+    footer {
+        padding: 16px;
+    }
 }
